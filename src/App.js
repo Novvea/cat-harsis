@@ -1,16 +1,25 @@
+import { useState } from 'react'
 
 function App() {
+  const [color, setColor] = useState('green')
+
+  const handleColorChange = (event) => {
+    setColor(event.target.value)
+  }
+
   return (
     <div>
       <h1>When you just need to color a cat</h1>
-      <input type='color'></input>
+      <label for='bodycolor'>Choose color of body:</label>
+      <input type='color' name='bodycolor' id='bodycolor' value={color} onChange={handleColorChange}/>
+
       <div>
         <svg width="189" height="268" viewBox="0 0 189 268" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g id='ears' fill="#BBA099">
             <path d="M40.5028 5.50001L67.9441 31.8704L40.5028 39.8534L40.5028 5.50001Z" />
             <path d="M152.774 12.8424L153.302 45.3919L127.424 33.2658L152.774 12.8424Z" />
           </g>
-          <g id='body' fill="#BBA099">
+          <g id='body' fill={color}>
             <ellipse cx="92.5" cy="96" rx="91.5" ry="68" />
             <path d="M174 206.5C174 190.189 165.888 174.546 151.447 163.013C137.007 151.479 117.422 145 97 145C76.5783 145 56.9931 151.479 42.5528 163.013C28.1125 174.546 20 190.189 20 206.5L97 206.5H174Z"/>
           </g>
