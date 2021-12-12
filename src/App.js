@@ -7,10 +7,15 @@ function App() {
     nosecolor: 'yellow',
     eyecolor: 'chocolate'
   })
-  const [newColor, setNewColor] = useState('')
+  const [newColor, setNewColor] = useState({
+    bodycolor: 'grey',
+    earcolor: 'pink',
+    nosecolor: 'yellow',
+    eyecolor: 'chocolate'
+  })
 
    const handleColorChange = (event) => {
-     setNewColor(event.target.value)
+     setNewColor({...newColor, [event.target.id]: event.target.value})
       setColor({...color, [event.target.id]: event.target.value})
   } 
   console.log('color', color)
@@ -20,13 +25,13 @@ function App() {
     <div>
       <h1>When you just need to color a cat</h1>
         <label for='bodycolor'>Choose color of body:</label>
-        <input type='color' name='bodycolor' id='bodycolor' value={newColor} onChange={handleColorChange} />
+        <input type='color' name='bodycolor' id='bodycolor' value={newColor.bodycolor} onChange={handleColorChange} />
         <label for='earcolor'>Choose color of ears:</label>
-        <input type='color' name='earcolor' id='earcolor' value={newColor} onChange={handleColorChange} />
+        <input type='color' name='earcolor' id='earcolor' value={newColor.earcolor} onChange={handleColorChange} />
         <label for='nosecolor'>Choose color of nose:</label>
-        <input type='color' name='nosecolor' id='nosecolor' value={newColor} onChange={handleColorChange} />
+        <input type='color' name='nosecolor' id='nosecolor' value={newColor.nosecolor} onChange={handleColorChange} />
         <label for='eyecolor'>Choose color of eyes:</label>
-        <input type='color' name='eyecolor' id='eyecolor' value={newColor} onChange={handleColorChange} />
+        <input type='color' name='eyecolor' id='eyecolor' value={newColor.eyecolor} onChange={handleColorChange} />
       <div>
         <svg width="189" height="268" viewBox="0 0 189 268" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g id='ears' fill={color.earcolor}>
