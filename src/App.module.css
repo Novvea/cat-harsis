@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&display=swap');
+
+.container{
+    
+}
+
+.heading{
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 700;
+    color: rgb(47, 47, 156);
+  }
+
+.lable{
+    margin: 1rem;
+    font-family: 'Libre Franklin', sans-serif;
+}

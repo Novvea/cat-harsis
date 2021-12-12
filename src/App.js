@@ -1,3 +1,4 @@
+import styles from './App.module.css'
 import { useState } from 'react'
 
 function App() {
@@ -22,18 +23,18 @@ function App() {
 
 
   return (
-    <div>
-      <h1>When you just need to color a cat</h1>
-        <label for='bodycolor'>Choose color of body:</label>
+    <div className={styles.container}>
+      <h1 className={styles.heading}>When you just need to color a cat</h1>
+        <label for='bodycolor' className={styles.lable}>Choose color of body:</label>
         <input type='color' name='bodycolor' id='bodycolor' value={newColor.bodycolor} onChange={handleColorChange} />
         <br/>
-        <label for='earcolor'>Choose color of ears:</label>
+        <label for='earcolor' className={styles.lable}>Choose color of ears:</label>
         <input type='color' name='earcolor' id='earcolor' value={newColor.earcolor} onChange={handleColorChange} />
         <br/>
-        <label for='nosecolor'>Choose color of nose:</label>
+        <label for='nosecolor' className={styles.lable}>Choose color of nose:</label>
         <input type='color' name='nosecolor' id='nosecolor' value={newColor.nosecolor} onChange={handleColorChange} />
         <br/>
-        <label for='eyecolor'>Choose color of eyes:</label>
+        <label for='eyecolor' className={styles.lable}>Choose color of eyes:</label>
         <input type='color' name='eyecolor' id='eyecolor' value={newColor.eyecolor} onChange={handleColorChange} />
       <div>
         <svg width="189" height="268" viewBox="0 0 189 268" fill="none" xmlns="http://www.w3.org/2000/svg">
