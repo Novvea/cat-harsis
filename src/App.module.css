@@ -38,9 +38,15 @@ ul{
     display: flex;
     flex-direction: column;
     padding: 0;
+    gap: 10px;
+    max-width: 445px;
 }
 
-li{   
+li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 label{
