@@ -4,10 +4,10 @@ import { useState } from 'react'
 
 function App() {
   const [color, setColor] = useState({
-    bodycolor: 'grey',
-    earcolor: 'pink',
-    nosecolor: 'yellow',
-    eyecolor: 'chocolate'
+    bodycolor: '#9C6615',
+    earcolor: '#5E083E ',
+    nosecolor: '#E26D5A',
+    eyecolor: '#84B59F'
   })
   const [newColor, setNewColor] = useState({
     bodycolor: '',
