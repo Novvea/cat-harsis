@@ -30,6 +30,7 @@ header{
 h1{
     font-family: 'Poppins', sans-serif;
     color: #003B36;
+    color: #00524B;
 }
 
 ul{
@@ -46,6 +47,7 @@ label{
     margin: 1rem;
     font-family: 'Poppins', sans-serif;
     color: #003B36;
+    color: #00524B;
 }
 
 .cat_image{
