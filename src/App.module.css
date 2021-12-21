@@ -1,16 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-.container{
-    
+/* 
+Some colors
+lavender: #807182
+dark green: #003B36 
+ligt pink: #FADAC7
+lighter pink: #FCE6D9
+tyrian purple: #45062E
+*/
+
+html{
+    box-sizing: border-box; /* easier math if using this */
 }
 
-.heading{
-    font-family: 'Libre Franklin', sans-serif;
-    font-weight: 700;
-    color: rgb(47, 47, 156);
-  }
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    background-color: #FCE6D9
+}
 
-.lable{
+section{
+    max-width: 1200px;
+    min-height: 100vh;
+}
+header{
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    color: #003B36;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+li{   
+}
+
+label{
     margin: 1rem;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: #003B36;
 }
+
+.cat_image{
+}
+
